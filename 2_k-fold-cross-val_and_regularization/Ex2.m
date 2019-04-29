@@ -68,10 +68,14 @@ Y = dataQuadReg2D(:,3);
 % prepend 1s to inputs
 X = [ones(n,1),X];
 
+%for quadratic features:
+%X = quadFeature(X);
+
 % compute optimal beta
 %beta = inv(X'*X)*X'*Y;
 %new beta
-lambda = [0.001,0.01,0.1,1,10,100,1000]';
+lambda = [0.001,0.01,0.1,1,10,20,100,1000]';
+lambda = [24]
 for i = 1:length(lambda)
     beta = inv(X'*X+ lambda(i)*eye(3))*X'*Y;
     train_loss(i) = norm(Y-X*beta)^2 + lambda(i)*norm(beta(2:length(beta)))^2;    
