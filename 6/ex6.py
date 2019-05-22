@@ -1,31 +1,35 @@
 import tensorflow as tf
+import numpy as np
+
+def main():
+    X = tf.placeholder(tf.float32, shape=(100, 3), name='X')
+    y = tf.placeholder(tf.float32, shape=(100, 1), name='labels')
+    p = tf.placeholder(tf.float32, shape=(100, 1), name='logits')
+    beta = tf.placeholder(tf.float32, shape=(3, 1), name='beta')
+
+    total_loss = loss(y, p)
+
+    with tf.Session() as sess:
+        print(sess.run(total_loss, feed_dict={y: np.random.rand(100, 1), p: np.random.rand(100, 1)}))
 
 
-X = tf.placeholder(tf.float32, shape=(100, 3))
-y = tf.placeholder(tf.float32, shape=(100, 1))
-beta = tf.placeholder(tf.float32, shape=3)
-
-p = 1
-
-
-def loss(
-        labels=y,
-        logits=p):
+def loss(labels, logits):
     """
-    # TODO: describe function
-    Computes sigmoid cross entropy given `logits`.
+    Computes the total loss for logistic regression
     """
-    ones_vec = tf.ones([tf.size(labels)[0], 1], tf.int32)
-
+    ones_vec = np.ones((100, 1), dtype=np.float32)
     loss_vec = tf.math.add(
-        labels * tf.math.log(logits),
-        tf.math.subtract(ones_vec - labels) * tf.math.log(tf.math.subtract(ones_vec, logits))
+        tf.multiply(labels, tf.math.log(logits)),
+        tf.multiply(
+            tf.math.subtract(ones_vec, labels),
+            tf.math.log(
+                tf.math.subtract(ones_vec, logits)
+            )
+        )
     )
-
-    total_loss = -tf.math.add_n(loss_vec)
+    total_loss = -tf.reduce_sum(loss_vec)
     return total_loss
 
 
-total_loss = loss(y, p)
+main()
 
-print(total_loss)
