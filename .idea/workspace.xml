@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad4c803a-506a-469a-bc05-968db9e5d11b" name="Default Changelist" comment="labels = ones">
+    <list default="true" id="ad4c803a-506a-469a-bc05-968db9e5d11b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/e06-tensorFlow.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/6/e06-tensorFlow.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6/ex6.py" beforeDir="false" afterPath="$PROJECT_DIR$/6/ex6.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/6/ex6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="600">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -38,16 +39,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="1051" />
-    <option name="width" value="1323" />
-    <option name="height" value="741" />
+    <option name="x" value="202" />
+    <option name="y" value="182" />
+    <option name="width" value="992" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -64,13 +66,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/vir/example" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -152,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558518480765</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="read form data">
+      <created>1558550898435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558550898435</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -165,10 +173,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="1051" width="1323" height="741" extended-state="6" />
+    <frame x="34" y="0" width="1280" height="1024" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17846154" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18406375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -181,7 +189,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289256" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289256" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3586777" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.244921" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -190,18 +198,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="loss implemented" />
     <MESSAGE value="labels = ones" />
-    <option name="LAST_COMMIT_MESSAGE" value="labels = ones" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6/ex6.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="read form data" />
+    <option name="LAST_COMMIT_MESSAGE" value="read form data" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/lib/python3.6/tokenize.py">
@@ -274,8 +272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/6/ex6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        <state relative-caret-position="600">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
