@@ -2,6 +2,9 @@
   <dictionary name="chrei">
     <words>
       <w>dataset</w>
+      <w>hessians</w>
+      <w>logdir</w>
+      <w>logit</w>
       <w>logits</w>
     </words>
   </dictionary>
