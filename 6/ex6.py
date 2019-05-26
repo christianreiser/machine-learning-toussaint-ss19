@@ -153,7 +153,7 @@ def nn(x):
 
 
 """
-/////////////////// exercise 3 /////////////////////////////////////////////////////////////////////////
+/////////////////// exercise 2b /////////////////////////////////////////////////////////////////////////
 """
 
 
@@ -194,11 +194,6 @@ def plot_data(signs, labels):
 
 
 def exercise2b():
-    # hyper-parameters
-    num_epochs = 100  # number of training epochs
-    lr = 0.001  # learning rate
-
-    class_names = np.arange(61)
     train_images, train_labels = load_data(data_directory='./BelgiumTSC/Training')  # import data
     test_images, test_labels = load_data(data_directory='./BelgiumTSC/Testing')  # import data
 
@@ -234,7 +229,7 @@ def exercise2b():
     model.add(layers.Dense(
         units=62,
         activation='softmax',
-        use_bias=True,
+        use_bias=True,=
         kernel_initializer=tf.initializers.he_normal))
 
     # plot_data(signs=, labels=)
