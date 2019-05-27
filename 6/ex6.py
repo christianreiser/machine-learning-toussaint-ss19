@@ -84,7 +84,7 @@ def predict(X, beta):
 
 def numpy_equations(X, beta, y):
     p = 1. / (1. + np.exp(-np.dot(X, beta)))
-    L = -np.sum(y * np.log(p) + ((1. - y) * np.log(1.-p)))
+    L = -np.sum(y * np.log(p) + ((1. - y) * np.log(1. - p)))
     dL = np.dot(X.T, p - y)
     W = np.identity(X.shape[0]) * p * (1. - p)
     ddL = np.dot(X.T, np.dot(W, X))
