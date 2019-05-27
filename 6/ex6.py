@@ -28,8 +28,8 @@ def exercise1():
     total_loss = loss(y, p, num_samples)  # returns total loss form labels and logits
     gradients = tf.gradients(total_loss, beta, name='gradients')  # compute gradients of loss w.r.t. beta
     hessians = tf.hessians(total_loss, beta, name='hessians')  # compute hessians of loss w.r.t. beta
-    # L, dL, ddL = numpy_equations(X, beta, y)  # TODO: fix bug
-    # print('L:', L, 'dL:', dL, 'ddL', ddL)  # TODO: compare to tf results
+    L, dL, ddL = numpy_equations(data[:, 0:3], np.random.rand(200), data[:, 3])  # TODO: fix bug
+    print('L:', L, 'dL:', dL, 'ddL', ddL)  # TODO: compare to tf results
 
     with tf.Session() as sess:
         writer = tf.summary.FileWriter('./graphs', sess.graph)  # write graph event file for TensorBoard visualization
@@ -256,7 +256,7 @@ def exercise2b():
     print('Test accuracy:', test_acc)
 
 
-# exercise1()
+exercise1()
 # exercise2a()
-exercise2b()
+# exercise2b()
 
