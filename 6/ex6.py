@@ -20,26 +20,31 @@ def exercise1():
     num_samples = len(data[:, 0])  # number of samples in dataset
 
     # Initialize tf.placeholders
-    X = tf.placeholder(tf.float32, shape=(num_samples, 3), name='X')  # input from dataset
+    X = tf.placeholder(tf.float32, shape=(num_samples,  3), name='X')  # input from dataset
     y = tf.placeholder(tf.float32, shape=num_samples, name='labels')  # labels
-    beta = tf.placeholder(tf.float32, shape=num_samples, name='beta')  # features
+    beta = tf.placeholder(tf.float32, shape=(3, 1), name='beta')  # features
 
+    beta_feed = np.random.rand(3, 1)  # same beta for feed and numpy equations
     p = predict(X, beta)  # compute prediction p from input data and features beta
     total_loss = loss(y, p, num_samples)  # returns total loss form labels and logits
+
+    # gradients hessians
     gradients = tf.gradients(total_loss, beta, name='gradients')  # compute gradients of loss w.r.t. beta
     hessians = tf.hessians(total_loss, beta, name='hessians')  # compute hessians of loss w.r.t. beta
-    L, dL, ddL = numpy_equations(data[:, 0:3], np.random.rand(200), data[:, 3])  # TODO: fix bug
+
+    # numpy equations
+    L, dL, ddL = numpy_equations(data[:, 0:3], beta_feed, data[:, 3])  # np equations from ex sheet
     print('L:', L, 'dL:', dL, 'ddL', ddL)  # TODO: compare to tf results
 
     with tf.Session() as sess:
         writer = tf.summary.FileWriter('./graphs', sess.graph)  # write graph event file for TensorBoard visualization
         print(
             sess.run(
-                (total_loss, gradients, hessians),  # TODO: ex a: total_loss
+                (total_loss, gradients, hessians),  # TODO: ex a: compare to np equations
                 feed_dict={
                     X: data[:, 0:3],  # feed input data X from dataset
                     y: data[:, 3],  # feed label data into placeholder
-                    beta: np.random.rand(200)  # TODO: feed beta from model
+                    beta: beta_feed  # TODO: feed beta from model?
                 }
             )
         )
