@@ -254,14 +254,14 @@ def exercise2b():
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
 
-    model.fit(train_images, train_labels, epochs=2)
+    model.fit(train_images, train_labels, epochs=1)
 
     test_loss, test_acc = model.evaluate(test_images, test_labels)
 
     print('Test accuracy:', test_acc)
 
 
-exercise1()
+# exercise1()
 # exercise2a()
-# exercise2b()
+exercise2b()
 

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4c803a-506a-469a-bc05-968db9e5d11b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/chrei.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/chrei.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6/ex6.py" beforeDir="false" afterPath="$PROJECT_DIR$/6/ex6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/ex6-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/6/ex6-3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,49 +14,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/6/ex6.py">
+        <entry file="file://$PROJECT_DIR$/6/ex6-3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+            <state relative-caret-position="56">
+              <caret line="13" column="9" selection-end-line="17" selection-end-column="8" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/keras/layers/convolutional.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1185">
-              <caret line="193" selection-start-line="193" selection-end-line="193" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="256" selection-start-line="256" selection-end-line="256" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/ops/variables.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="1502" selection-start-line="1502" selection-end-line="1502" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="2494" selection-start-line="2494" selection-end-line="2494" />
             </state>
           </provider>
         </entry>
@@ -72,14 +34,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/6/ex6.py" />
+        <option value="$PROJECT_DIR$/6/ex6-3.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="68" />
-    <option name="y" value="27" />
-    <option name="width" value="1298" />
-    <option name="height" value="741" />
+    <option name="x" value="536" />
+    <option name="y" value="1080" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -144,10 +107,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex6" type="PythonConfigurationType" factoryName="Python">
       <module name="machine-learning-toussaint-ss19" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/6" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -190,7 +156,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex6" />
         <item itemvalue="Python.ops" />
       </list>
     </recent_temporary>
@@ -241,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558718239988</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cassify traffic signs">
+      <created>1558801048574</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558801048574</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -254,23 +226,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="0" width="1280" height="1024" extended-state="6" />
-    <editor active="true" />
+    <frame x="579" y="1107" width="1323" height="741" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20047733" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3277027" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4966216" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289256" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36859503" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49586776" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882884" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32882884" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32882884" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.26013514" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.30082646" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -283,7 +254,19 @@
     <MESSAGE value="1a finished" />
     <MESSAGE value="add comments" />
     <MESSAGE value="add nn trains" />
-    <option name="LAST_COMMIT_MESSAGE" value="add nn trains" />
+    <MESSAGE value="cassify traffic signs" />
+    <option name="LAST_COMMIT_MESSAGE" value="cassify traffic signs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/6/ex6-3.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/lib/python3.6/tokenize.py">
@@ -473,38 +456,48 @@
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/keras/layers/convolutional.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1185">
+        <state relative-caret-position="2490">
           <caret line="193" selection-start-line="193" selection-end-line="193" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="3570">
           <caret line="256" selection-start-line="256" selection-end-line="256" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/ops/variables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="22140">
           <caret line="1502" selection-start-line="1502" selection-end-line="1502" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="36960">
           <caret line="2494" selection-start-line="2494" selection-end-line="2494" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/6/ex6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+        <state relative-caret-position="110">
+          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6/ex6-3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="13" column="9" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
