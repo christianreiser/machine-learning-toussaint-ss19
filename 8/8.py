@@ -11,12 +11,16 @@ for filename in listdir('yalefaces'):
     tmp_images.append(np.ndarray.flatten(
                     skimage.data.imread('yalefaces/' + filename)))
     images = np.concatenate([image[np.newaxis] for image in tmp_images])
+print('images_shape', images.shape)
 
 # 2b
 # compute the mean face 
 num_images = images.shape[0]
-sum_faces = np.sum(images, axis=0)
-mean_face = 1/num_images * sum_faces
+mean_face = 1/num_images * np.sum(images, axis=0)
+print('mean_face.shape=', mean_face.shape)
+mean_face_2d = np.reshape(mean_face, [243, 320])
+mean_face_loaded = Image.fromarray(mean_face_2d, 'L')
+mean_face_loaded.save('mean_face.png')
 
 # center the whole data matrix
 # X_tilde = X - 1_n * np.transpose(mean_face)
@@ -51,10 +55,12 @@ reconstructed_images = np.add(
     np.matmul(Z, np.transpose(v_p)))
 
 # save and display images
-reconstructed_images_tensor = np.reshape(reconstructed_images, [320, 243, num_images])
-#print(reconstructed_images_tensor[0].shape)
-#img = Image.fromarray(reconstructed_images, 'L')
-#img.save('reconstruction.png')
+reconstructed_images_tensor = np.reshape(reconstructed_images, [243, 320, num_images])
+print(reconstructed_images_tensor[:, :, 0].shape)
+for i in range(num_images):
+    current_img = reconstructed_images_tensor[:, :, 0]
+    img = Image.fromarray(current_img, 'L')
+    img.save('reconstructions/'+str(i)+'.png')
 #img.show()
 
 # compute reconstruction error
