@@ -1,11 +1,8 @@
-# TODO: my has same dim as image
-
-
 from os import listdir
 import numpy as np
 import skimage
+from PIL import Image
 # import KMeans
-# from PIL import Image
 
 # 1adistance_sum_nearest_cluster
 # K = 4, random initializations of the centers, Repeat k-means clustering 10 times.
@@ -21,7 +18,7 @@ num_imgs = D.shape[0]
 len_flat_img = D.shape[1]
 
 # initialize
-num_iterations = 2
+num_iterations = 1
 num_clusters = 4  # number of clusters
 cluster_mean = np.random.randint(low=0, high=255, size=[num_clusters, len_flat_img])  # ini cluster mean randomly
 print('initial cluster mean', cluster_mean)
@@ -81,8 +78,14 @@ for iteration in range(num_iterations):
                 num_reinitializations += 1
     print('num reinitializations', num_reinitializations)
 
-print('assigned clusters of images:', distance_sum_nearest_cluster[:, 1])
 print('cluster mean=', cluster_mean)
+
+# show mean face
+most_used_mean_index = np.argmax(num_images_in_cluster)
+img = np.reshape(cluster_mean[most_used_mean_index, :], [243, 160])
+img = Image.fromarray(img, 'L')
+img.save('mean_face.png')
+img.show()
 """
 n_init=10 to run 10 times with different centroid seeds.
         The final results will be the best output of n_init consecutive runs in terms of inertia.
