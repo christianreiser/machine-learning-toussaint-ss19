@@ -18,13 +18,15 @@ num_imgs = D.shape[0]
 len_flat_img = D.shape[1]
 
 # initialize
-num_iterations = 9
-num_clusters = 15  # number of clusters
-runs = 10
-for num_clusters in range(4, 10, num_imgs):  # test for different k
+num_iterations = 100  # max iterations
+num_clusters = 2  # number of clusters
+runs = 1
+error_over_k = []
+for num_clusters in range(4, num_imgs, 10):  # test for different k
     print('num_clusters', num_clusters)
     for run in range(runs):
         print('run:', run)
+        # TODO: initialize with random data points, not random ints
         cluster_mean = np.random.randint(low=0, high=255, size=[num_clusters, len_flat_img])  # ini cluster mean randomly
         distances = np.zeros([num_imgs, len_flat_img, num_clusters])  # ini centroid data distance tensor
         distances_pixel_sum = np.zeros([len_flat_img, num_clusters])
@@ -87,7 +89,7 @@ for num_clusters in range(4, 10, num_imgs):  # test for different k
             img_reshaped = img_reshaped.astype('uint8')  # change to uint8 otherwise img.show doesnt work
             img = Image.fromarray(img_reshaped, 'L')
             img.save('mean_faces/k_'+str(num_clusters)+'run'+str(run)+'_mean_face_cluster'+str(cluster)+'.png')
-    error_over_k = error_over_k
+    # error_over_k = error_over_k.append(error)  # log error
 
     img.show()
 
