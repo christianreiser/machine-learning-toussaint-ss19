@@ -87,7 +87,7 @@ for num_clusters in range(4, 10, num_imgs):  # test for different k
             img_reshaped = img_reshaped.astype('uint8')  # change to uint8 otherwise img.show doesnt work
             img = Image.fromarray(img_reshaped, 'L')
             img.save('mean_faces/k_'+str(num_clusters)+'run'+str(run)+'_mean_face_cluster'+str(cluster)+'.png')
-
+    error_over_k = error_over_k
 
     img.show()
 
