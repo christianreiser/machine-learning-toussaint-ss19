@@ -12,7 +12,7 @@ y = data[:, 2]
 print(X)
 # num_samples = len(data[:, 0])  # number of samples in dataset
 # print(data)
-neigh = KNeighborsClassifier(n_neighbors=1)
+neigh = KNeighborsClassifier(n_neighbors=10)
 neigh.fit(X, y)
 predictions = neigh.predict(X)
 error_knn = sum(abs(predictions-y))
